@@ -5,9 +5,9 @@ const bgMusic = new Audio('castle2.mp3');
 bgMusic.loop = true;
 bgMusic.volume = 0.5;
 // bgMusic.play();
-// setTimeout(() => {
-//     bgMusic.play();
-// }, 1000)
+setTimeout(() => {
+    bgMusic.play();
+}, 1000)
 
 let main = document.querySelector('.main-container');
 let character = document.querySelector('.character');
