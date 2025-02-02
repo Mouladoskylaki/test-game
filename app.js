@@ -5,9 +5,6 @@ const bgMusic = new Audio('castle2.mp3');
 bgMusic.loop = true;
 bgMusic.volume = 0.5;
 // bgMusic.play();
-setTimeout(() => {
-    bgMusic.play();
-}, 1000)
 
 let main = document.querySelector('.main-container');
 let character = document.querySelector('.character');
@@ -25,10 +22,10 @@ document.addEventListener('keydown', (event) => {
     } else if (xPos < 30) {
         xPos = 40;
     }
-
     if (event.key === 'ArrowLeft') {
         yPos -= 10;
         character.style.left = `${yPos}px`;
+        bgMusic.play();
     }
     if (event.key === 'ArrowRight') {
         yPos += 10;
