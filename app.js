@@ -109,3 +109,4 @@ const bgMusic = new Audio('castle.mp3');
 bgMusic.loop = true;
 bgMusic.volume = 0.5;
 bgMusic.play();
+console.log('hey');
